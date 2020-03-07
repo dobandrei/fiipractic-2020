@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
+import Button from './components/button'
+import Footer from './components/footer'
+import Header from './components/header'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const myArray = [{
+  text : 'Apasa aici!',
+  buttontext : 'Buton1',
+  type: 0
+},
+{
+  text : 'Oare sa apas?',
+  buttontext : 'Buton2',
+  type: 1
+},
+{
+  text : '?????????',
+  buttontext : 'Buton3',
+  type: 2
+}];
+
+class App extends React.Component {
+  render() {
+    
+    return (
+      <div className="App">
+        <Header />
+    {myArray.map((obj,index)=> <Button key = {index} text = {obj} />)}
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -27,15 +27,57 @@
 }
 
 .footer{
-    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    min-height: 15vh;   
+    background-color: rgb(180, 174, 174);
     color: white;
     font-size: larger;
     padding: 20px 0;
 }
 
 .header {
-    background-color: black;
+    background-image: url("../logo/night_sky_header.png");
     color: white;
     font-size: larger;
     padding: 20px 0;
+}
+
+.nav {
+    width: 20%;
+    border-right: 5px solid grey;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav li {
+    list-style-type: none;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.buttonMain {
+    display: flex;
+}
+
+.content {
+    text-align: left;
+}
+
+.logo {
+    display: flex;
+    
+}
+.logo img {
+    width : 30px; 
+    height : 30px;
+    margin-left: 20px;
 }

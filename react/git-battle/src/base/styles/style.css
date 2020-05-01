@@ -8,7 +8,7 @@
     margin : 10px;
 }
 .button1 {
-    background-color: greenyellow;
+    background-color: rgb(23, 50, 99);
     color: white;
     border-radius: 5%;
     padding: 10px;
@@ -75,7 +75,7 @@
     background-image: url("../logo/night_sky_header.png");
     color: white;
     font-size: larger;
-    padding: 20px 0;
+    
 }
 .footer p {
     margin-left: 20px;
@@ -133,4 +133,6 @@
     border:none;
     margin-left:0; 
 }
+
+
 

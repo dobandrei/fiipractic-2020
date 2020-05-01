@@ -58,19 +58,22 @@ class Content extends React.Component {
         return (
             <div className = "content">
                 <div>
-                    {this.renderUsers(listOfUsers)}
-                    {this.props.users.usersList.length}
+                    <p>{listOfUsers}</p>
+                    
                     <p>Nume</p>
                     <input value = {this.state.firstName} onChange = {this.updateFirstName} />
                     <p>Prenume</p>
                     <input value = {this.state.lastName} onChange = {this.updateLastName} />
                     <p>Locatie</p>
                     <input value = {this.state.location} onChange = {this.updateLocation} />
+                    <br/>
                     <button onClick= {this.addUser}>Add</button>
+                    <p>Nr de useri inscrisi: {this.props.users.usersList.length}</p>
+                    {this.renderUsers(listOfUsers)}
                 </div>
 
                 <div>
-                    <p>..............................................................</p>
+                    <p>.......................................................................................................................................................</p>
                     <p>NUMARATOARE</p>
                     <p>{counter}</p>
 

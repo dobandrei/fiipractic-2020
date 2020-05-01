@@ -1,16 +1,15 @@
 import React from 'react';
-import Main from './components/main'
-import Nav from './components/nav'
-import Footer from './components/footer'
-import Header from './components/header'
-import './App.css'
+import Main from '../components/main'
+import Nav from '../components/nav'
+import Footer from '../components/footer'
+import Header from '../components/header'
 
 
-class App extends React.Component {
+class MainPage extends React.Component {
   render() {
     return (
       <div className="App">
-    
+
       <header className= "headerContainer">
         <Header />  
       </header>
@@ -29,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default MainPage;

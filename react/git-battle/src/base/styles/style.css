@@ -1,4 +1,4 @@
-.button0 {
+.button3 {
     background-color: #61dafb;
     color: white;
     border-radius: 5%;
@@ -26,16 +26,111 @@
     margin : 10px;
 }
 
-.footer{
-    background-color: black;
+.header {
+    background-image: url("../logo/night_sky_header.png");
     color: white;
     font-size: larger;
-    padding: 20px 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.header {
-    background-color: black;
+.header p {
+    margin: 0 40px;
+    color : white;
+}
+
+.nav {
+    width: 20%;
+    border-right: 5px solid grey;
+}
+.nav p {
+    text-decoration: underline;
+}
+.nav li {
+    list-style-type: none;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.buttonMain {
+    display: flex;
+}
+
+.contentText {
+    text-align: left;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../logo/night_sky_header.png");
     color: white;
     font-size: larger;
     padding: 20px 0;
 }
+.footer p {
+    margin-left: 20px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    
+}
+.logo img {
+    width : 30px; 
+    height : 30px;
+    margin-left: 20px;
+}
+
+.form {
+    width:90%;
+    font-family:Tahoma;
+    border: 2px dotted grey; 
+    margin:auto;
+}
+.form  input[type="text"],
+            input[type="email"]{
+    width:50%;
+    height:20px;
+    border:1px solid grey;           
+}
+.form  input[type="radio"], 
+            input[type="checkbox"]{
+    float:left;
+    margin-right:15px;
+    margin-left:0;
+}
+.form ul{
+    list-style:none;
+    padding-left:20px; 
+}
+.form ul li{
+    list-style:none;
+}
+.form label{
+    display:block;
+}
+.form textarea{
+    margin:auto;
+    width:90%;
+}
+#submit {
+    background-color: black;
+    color:white;
+    padding:10px 15px;
+    width:100%;
+    border:none;
+    margin-left:0; 
+}
+

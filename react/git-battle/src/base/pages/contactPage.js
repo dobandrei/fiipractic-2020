@@ -1,23 +1,22 @@
 import React from 'react';
-import Main from './components/main'
-import Nav from './components/nav'
-import Footer from './components/footer'
-import Header from './components/header'
-import './App.css'
+import Contact from '../components/contact'
+import Nav from '../components/nav'
+import Footer from '../components/footer'
+import Header from '../components/header'
 
 
-class App extends React.Component {
+class AboutPage extends React.Component {
   render() {
     return (
       <div className="App">
-    
+
       <header className= "headerContainer">
         <Header />  
       </header>
 
       <main className= "mainContainer">
         <Nav />
-        <Main />      
+        <Contact/>      
       </main>
 
       <footer className= "footerContainer">
@@ -29,4 +28,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default AboutPage;

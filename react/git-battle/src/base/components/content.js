@@ -3,6 +3,7 @@ import "../styles/style.css"
 
 import {connect} from 'react-redux'
 import{increment,decrement} from '../actions/counterActions'
+import{addUsers} from '../actions/userActions'
 
 class Content extends React.Component {
     constructor (props){
@@ -58,8 +59,7 @@ class Content extends React.Component {
         return (
             <div className = "content">
                 <div>
-                    <p>{listOfUsers}</p>
-                    
+
                     <p>Nume</p>
                     <input value = {this.state.firstName} onChange = {this.updateFirstName} />
                     <p>Prenume</p>
@@ -95,7 +95,7 @@ renderUsers = users => {
         return <p key ={index}> {user.firstName} {user.lastName} {user.location}</p>
     })
     return listOfUsers;
-}
+    }
 }
 const mapStateToProps = (state) => {
     return {
@@ -108,10 +108,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         increment : () => dispatch(increment()),
         decrement : () => dispatch(decrement()),    
-        addUserDispatcher: (user) => dispatch({
-            type: "ADD_USER",
-            data: user
-        })
+        addUserDispatcher: (user) => dispatch(addUsers(user))
     }
 }
 
